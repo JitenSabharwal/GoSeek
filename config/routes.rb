@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'exams/index'
+
+  get 'exams/new'
+
+  get 'exams/show'
+
+  get 'tests/new'
+
+  get 'tests/show'
+
+  get 'tests/index'
+
   root 'welcomes#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
