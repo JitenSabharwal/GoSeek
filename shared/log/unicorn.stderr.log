@@ -1,0 +1,9 @@
+I, [2015-11-10T07:53:45.231654 #29858]  INFO -- : Refreshing Gem list
+I, [2015-11-10T07:53:46.774073 #29858]  INFO -- : listening on addr=/home/jiten/GoSeek/shared/sockets/unicorn.sock fd=11
+I, [2015-11-10T07:53:46.774284 #29858]  INFO -- : worker=0 spawning...
+I, [2015-11-10T07:53:46.776814 #29858]  INFO -- : worker=1 spawning...
+I, [2015-11-10T07:53:46.778380 #29862]  INFO -- : worker=0 spawned pid=29862
+I, [2015-11-10T07:53:46.778589 #29862]  INFO -- : worker=0 ready
+I, [2015-11-10T07:53:46.780609 #29858]  INFO -- : master process ready
+I, [2015-11-10T07:53:46.786440 #29865]  INFO -- : worker=1 spawned pid=29865
+I, [2015-11-10T07:53:46.786655 #29865]  INFO -- : worker=1 ready

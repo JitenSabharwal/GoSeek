@@ -13,8 +13,7 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  host: localhost
-  username: root
+  username: GoSeek
   password: Jiten08@
   socket: /var/run/mysqld/mysqld.sock
 
