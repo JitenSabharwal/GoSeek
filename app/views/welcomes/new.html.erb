@@ -1,0 +1,32 @@
+<div id="login">
+	<%=form_for :user,url:"welcomes" do |f|%>
+		<%=f.label :email %>
+		<%=f.email_field :email,class: "form-control"%>
+
+		<%=f.label :password %>
+		<%=f.password_field :password,class: "form-control"%>
+		<%=f.submit "login" ,class: "btn btn-primary"%>
+	<% end %>
+</div>
+<div id="register" >
+	<%=form_for :user,url:welcomes_path do |f|%>
+		
+		<%=f.label :name%>
+		<%=f.text_field :name,class: "form-control"%>
+		
+		<%=f.label :email%>
+		<%=f.email_field :email,class: "form-control"%>
+
+		<%=f.label :password%>
+		<%=f.password_field :password,class: "form-control"%>
+		
+		<%=f.label :age%>
+		<%=f.number_field :dob,class: "form-control"%>
+		
+		<%=f.label :gender%>
+		<%=f.text_field :gender,class: "form-control"%>
+		
+		<%=f.submit "Register",class: "btn btn-primary" %>
+
+	<% end %>
+</div>
