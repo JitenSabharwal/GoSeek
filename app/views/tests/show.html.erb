@@ -1,2 +1,10 @@
-<h1>Tests#show</h1>
-<p>Find me in app/views/tests/show.html.erb</p>
+<table>
+	<tr>
+		<td><%=@test.question%></td>
+		<td><%=@test.option1%></td>
+		<td><%=@test.option2%></td>
+		<td><%=@test.option3%></td>
+		<td><%=@test.option4%></td>
+	</tr>
+</table>
+<%= link_to "Index",tests_path %>

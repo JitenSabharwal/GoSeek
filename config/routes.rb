@@ -1,18 +1,16 @@
 Rails.application.routes.draw do
-  get 'exams/index'
-
-  get 'exams/new'
-
-  get 'exams/show'
-
-  get 'tests/new'
-
-  get 'tests/show'
-
-  get 'tests/index'
-
   root 'welcomes#index'
+
+  get 'home' => "sessions#home"
+
+  post 'login' => 'sessions#login_attempt' 
+  get 'logout'=>"sessions#logout"
+  
   resources :welcomes
+  resources :sessions
+  resources :tests
+  resources :exams
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

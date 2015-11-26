@@ -1,2 +1,22 @@
-<h1>Tests#index</h1>
-<p>Find me in app/views/tests/index.html.erb</p>
+<table class="bodered">
+<tr>
+	<td>Question</td>
+	<td>Option1</td>
+	<td>Option2</td>
+	<td>Option3</td>
+	<td>Option4</td>
+	<td>Answer</td>
+</tr>
+<% @test_all.each do|test| %>
+	<tr>
+		<td><%=test.question%></td>
+		<td><%=test.option1%></td>
+		<td><%=test.option2%></td>
+		<td><%=test.option3%></td>
+		<td><%=test.option4%></td>
+		<td><%=test.answer%></td>
+		<td><%=link_to "edit", edit_test_path(test) %></td>
+	</tr>
+<% end %>
+Click To Add <%=link_to "New Question",new_test_path %>
+<hr>

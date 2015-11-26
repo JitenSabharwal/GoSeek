@@ -1,4 +1,5 @@
 class WelcomesController < ApplicationController
+  before_filter :save_login_state, :only=>[:index]  
   def index
  	@user=User.new
   end
@@ -11,8 +12,11 @@ class WelcomesController < ApplicationController
   		flash[:note]="Registered Successfully"
   	else
   		flash[:note]="Registration Unsuccessful"
-  		redirect_to(:controller=>"welcomes",:action=>"new")
-  	end	
+  	end
+    respond_to do|format|
+      format.html {redirect_to(:controller=>"welcomes",:action=>"index")}
+      format.js   
+    end	
   end
   private
   	def user_param

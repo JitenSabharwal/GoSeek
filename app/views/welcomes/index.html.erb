@@ -1,17 +1,19 @@
 
     
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
+    
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -58,9 +60,12 @@
                     <li>
                         <%=link_to "Team","#team" ,class: "page-scroll"%>
                     </li>
+                    <li>
+                        <%=link_to "Sign-up","#signup" ,class: "page-scroll"%>
+                    </li>
                     <li> 
                     <a data-target="#myModal" class=" btn"  data-toggle="modal">
-                        Sign in/up
+                        Sign-in
                     </a>
                     </li>
                     
@@ -299,6 +304,15 @@
             </div>
             
     </section>
+    <section id="signup" >
+        <div class="container">
+            <div id="register"  class="col-md-6" style="border-left:5px solid yellow">        <h3>Register</h3>
+                    <%= render "register" %>
+            </div>
+                                
+        </div>
+            
+    </section>
     <footer>
         <div class="container">
             <div class="row">
@@ -331,34 +345,31 @@
     <!-- Use the modals below to showcase details about your portfolio projects! -->
     <!--Modal For Sign in /up -->
 <div class=" modal fade" id="myModal"  role="dialog" aria-hidden="true">
-        <div class="modal-lg">
+        <div class="modal-dialog modal-sm">
         <div class="modal-content">
-            <div class="container">
+            <div class="container text-center" >
                 <div class="row">
-                    <div class="col-lg-8 ">
-                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;    </button>
-                            <h2 class="modal-title">GoSeek</h2>
-                          </div>
-                          <div class="modal-body  text-center">
-                            <!-- Project Details Go Here -->
-                            <div id="login"  class="col-md-6" >
+                         <div class="modal-header col-md-3">
                                 <h2>Login</h2>
+                          </div>
+                    </div>
+                <div class="row">
+                          <div class="modal-body  col-md-3">
+                            <!-- Project Details Go Here -->
+                            <div id="login"  >
                                 <%=render "login"%>
                             </div>
-                            <div id="register"  class="col-md-6" style="border-left:5px solid yellow">
-                                <h3>Register</h3>
-                                <%= render "register" %>
-                            </div>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i></button>
-                        </div>
-                    </div>
+                         </div>
+                 </div>
+                <div class="row">
+                         <div class="modal-footer col-md-3">
+                          <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i></button>
+                          </div>
                 </div>
             </div>
-        </div>
+            </div>
         </div>
     </div>
-
     <!-- jQuery >
     <script src="js/jquery.js"></script>
 
@@ -372,7 +383,6 @@
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>

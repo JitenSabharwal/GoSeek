@@ -1,4 +1,4 @@
-<%=form_for :user,url:welcomes_path do |f|%>
+<%=form_for :user,url:{controller:"welcomes",action:"create"},:remote=>true do |f|%>
     <div class="form-group">
 		<%=f.label :name%>
    </div>
