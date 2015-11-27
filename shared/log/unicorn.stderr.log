@@ -7,3 +7,16 @@ I, [2015-11-10T07:53:46.778589 #29862]  INFO -- : worker=0 ready
 I, [2015-11-10T07:53:46.780609 #29858]  INFO -- : master process ready
 I, [2015-11-10T07:53:46.786440 #29865]  INFO -- : worker=1 spawned pid=29865
 I, [2015-11-10T07:53:46.786655 #29865]  INFO -- : worker=1 ready
+I, [2015-11-26T05:04:49.023579 #29858]  INFO -- : reaped #<Process::Status: pid 29862 exit 0> worker=0
+I, [2015-11-26T05:04:49.025831 #29858]  INFO -- : reaped #<Process::Status: pid 29865 exit 0> worker=1
+I, [2015-11-26T05:04:49.027000 #29858]  INFO -- : master complete
+I, [2015-11-26T05:04:54.643456 #6400]  INFO -- : Refreshing Gem list
+I, [2015-11-26T05:04:58.294287 #6400]  INFO -- : unlinking existing socket=/home/jiten/GoSeek/shared/sockets/unicorn.sock
+I, [2015-11-26T05:04:58.294719 #6400]  INFO -- : listening on addr=/home/jiten/GoSeek/shared/sockets/unicorn.sock fd=11
+I, [2015-11-26T05:04:58.294944 #6400]  INFO -- : worker=0 spawning...
+I, [2015-11-26T05:04:58.298599 #6400]  INFO -- : worker=1 spawning...
+I, [2015-11-26T05:04:58.300585 #6400]  INFO -- : master process ready
+I, [2015-11-26T05:04:58.306225 #6404]  INFO -- : worker=0 spawned pid=6404
+I, [2015-11-26T05:04:58.309184 #6404]  INFO -- : worker=0 ready
+I, [2015-11-26T05:04:58.310071 #6406]  INFO -- : worker=1 spawned pid=6406
+I, [2015-11-26T05:04:58.310276 #6406]  INFO -- : worker=1 ready
